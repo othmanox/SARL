@@ -1,0 +1,154 @@
+@import "./colors";
+@import "./Layout";
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  max-width: 100%;
+}
+.home {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(
+    340deg,
+    $header-color-brit 0%,
+    $header-color-dark 100%
+  );
+}
+
+.left-content {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 60px;
+}
+.fly {
+  width: 200px;
+  position: absolute;
+  bottom: -55px;
+  right: 46px;
+}
+.oval {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: linear-gradient(
+    150deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  border-radius: 50%;
+  top: -30px;
+  left: -30px;
+}
+.left-content p {
+  font-size: 24px;
+  color: $Snow;
+}
+
+.left-content p span {
+  display: block;
+}
+
+.right-content {
+  padding: 15px;
+  height: 100%;
+}
+.right-content {
+  p {
+    font-size: 9px;
+  }
+}
+.form-floating > label {
+  font-size: 10px;
+  top: -15px;
+  left: -12px;
+}
+.form-floating > .form-control,
+.form-floating > .form-select {
+  height: auto;
+}
+.form-floating {
+  margin-bottom: 15px;
+}
+.form-floating.mb-3 {
+  input.form-control {
+    padding: 5px;
+  }
+}
+.form-check.form-switch {
+  label.form-check-label {
+    font-size: 10px;
+  }
+}
+.form-check.form-switch {
+  input.form-check-input {
+    width: 25px;
+    margin-left: -34px;
+    height: 15px;
+    margin-top: 9px;
+  }
+}
+.row {
+  margin-bottom: 30px;
+}
+.right-content {
+  background-color: $Snow;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 30px;
+}
+form {
+  font-size: 19px;
+  .form-control {
+    border: 0px;
+    border-bottom: 1px solid $DimGray;
+    border-radius: 0;
+  }
+}
+.oub {
+  text-decoration: none;
+  color: $DarkGray;
+  font-size: 10px;
+  &:hover {
+    color: $DarkGray;
+  }
+}
+.sub {
+  background-color: #97c157;
+  color: $Snow;
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid transparent;
+  font-size: 15px;
+  padding: 5px;
+}
+.WeCount {
+  max-width: 60%;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.row.form {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 0;
+  margin-left: 0;
+  .div-oub {
+    width: 40%;
+    text-align: right;
+  }
+  .form-check.form-switch {
+    width: 60%;
+  }
+}
+.form-check.form-switch {
+  input.form-check-input:checked {
+    background-color: $btnGreen;
+    border: 1px solid $btnGreen;
+  }
+}
+/* login  */
+.container-fluid {
+  width: 90%;
+}

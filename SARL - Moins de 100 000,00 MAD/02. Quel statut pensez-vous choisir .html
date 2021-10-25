@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quel statut pensez-vous choisir</title>
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/layout.css">
     <link rel="stylesheet" href="../assets/plugins/bootstrap-5/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/respemsive.css">
 </head>
 <body>
     <!-- Start navigation -->
@@ -158,28 +158,36 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md">
                                     <div class="page-num">
-                                        <p>01</p>
+                                        <h1><span>01.</span> Quel statut pensez-vous choisir ?</h1>
                                     </div>
-                                    <div class="cont">
-                                        <div class="page-aug">
-                                                <p class="num"><span class="aug-num">1</span>/2</p>
-                                                <div class="page-progress">
-                                                    <span class="page-spn active"></span>
-                                                    <span class="page-spn"></span>
-                                                </div> 
-                                        </div>           
-                                        <div class="page-btn">
-                                            <button class="btn one" id="ent-type-one" onclick="btnactive1()">Entreprise SARL</button>
-                                            <button class="btn two" id="ent-type-tow" onclick="btnactive2()">Succursale</button>
+                                    <form action="#">
+                                        <div class="div-cont">
+                                            <div class="cont">
+                                                <div class="page-aug">
+                                                    <h2 class="num"><span class="aug-num">1</span>/2.
+                                                        Veuillez choisir le statut de l’entreprise qui vous intéresse
+                                                    </h2>
+                                                    <div class="page-progress">
+                                                        <span class="page-spn active"></span>
+                                                        <span class="page-spn"></span>
+                                                    </div> 
+                                                </div>    
+                                            </div>
+                                            <div class="page-btn">
+                                                <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                                                    <input type="checkbox" class="btn one" id="btncheck1" autocomplete="off" value="Entreprise SAR">
+                                                    <!-- <label for="btncheck1" class="btn btn-outline-primary">Entreprise SAR</label> -->
+                                                </div>
+                                                <input type="radio" class="btn one" id="ent-type-one" onclick="btnactive1()">
+                                                    <label for="ent-type-one">Entreprise SARL</label>
+                                                </input>
+                                                
+                                                <input type="radio" class="btn two" id="ent-type-tow" onclick="btnactive2()">Succursale</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    
-                                </div>
-                                <div class="col-md-4">
-                                    <p class="down-p1">Quel statut pensez-vous choisir ?</p>
-                                    <p class="down-p2">Veuillez choisir le statut de l’entreprise qui vous intéresse</p>
+                                    </form>
                                 </div>
                             </div>
                             <div class="action-btn">

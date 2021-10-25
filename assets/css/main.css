@@ -23,23 +23,27 @@
   position: relative;
   box-shadow: -2px 1px 14px 3px rgba(0, 0, 0, 0.21);
 }
-.down .page-aug {
-  display: flex;
-  justify-content: space-around;
-}
 .down .page-progress {
   display: flex;
   align-items: center;
 }
-.down .page-num p {
+.down .page-num h1 {
   font-size: 25px;
+}
+.down .page-num span {
   font-weight: 500;
   color: #ff8f00;
 }
 .down .page-aug .num {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   color: #7d7d7d;
+}
+.page-aug {
+  display: flex;
+}
+.div-cont {
+  padding-left: 50px;
 }
 .down .page-aug .aug-num {
   color: #ff8f00;
@@ -404,4 +408,11 @@ div.row.ajouter-btn.active {
   border: 0px;
   border-radius: 0;
   border-bottom: 1px solid #9f9f9f;
+}
+.form-data-final {
+  width: 100%;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
 }
